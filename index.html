@@ -1,15 +1,64 @@
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
     .logo img {
         height: 92px;
         width: 272px;
         padding-top: 109px;
-        position: relatve;
+        position: relative;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    html {
+        height: 100%;
+    }
     body {
         color: #222;
+        height: 100%;
+    }
+    .search {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 600px;
+        height: 50px;
+        border-radius: 25px;
+        border-style:solid;
+    }
+    .button {
+        position: relative;
+        display: inline-block;
+        font-family: arial;
+        font-size: 14px;
+        border: none;
+        left: 37%;
+        padding-top: 10%;
+        border-width: 50px;
+        color: #5F6369;
+        background-color: #f2f2f2;
+        border-radius: 4px;
+        line-height: 27px;
+        text-align: center;
+        height: 36px;
+        padding: 0px 16px;
+        margin: 0px 40px;
+    }
+    #buttons {
+        position: relative;
+        display: block;
+        padding-top: 30px;
+    }
+    #footerdiv {
+        display: block;
+        position: absolute;
+        color: gray;
+        background-color: gray;
+        border: black;
     }
 
 </style>
@@ -20,13 +69,30 @@
 <head>
     <title>Google</title>
 </head>
-<body>
-    <div class="logo img">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+<main>
+    <body>
+        <div class="logo img">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div>
+            <form action="#">
+                <input class="search" type="text" placeholder="" name="search">
+            </form>
+        </div>
+        <div id="buttons">
+            <button class="button" >
+                Google search
+            </button>
+            <button class="button" >
+                I'm Feeling Lucky
+            </button>
+        </div>
+    </body>
+    <div id="footerdiv">
+        <footer id="footer">
+
+        </footer>
     </div>
 
-
-
-
-</body>
+</main>
 </html>
