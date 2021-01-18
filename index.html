@@ -53,12 +53,36 @@
         display: block;
         padding-top: 30px;
     }
-    #footerdiv {
-        display: block;
-        position: absolute;
+    #bottombar {
+        background-color: #f2f2f2;
+        border: solid;
+        border-color: gray;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 20px;
+        height: 36px;
+        margin-top: 216px;
+        margin-bottom: 0px;
+        
+
+    }
+    #footer {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        font-family: arial;
         color: gray;
-        background-color: gray;
-        border: black;
+    }
+    #leftfooter {
+
+    }
+    #rightfooter {
+    }
+    #Advertising {
+    }
+    #Business {
+        
     }
 
 </style>
@@ -87,12 +111,23 @@
                 I'm Feeling Lucky
             </button>
         </div>
+        <div id="bottombar">
+            <footer id="footer">
+                <div id="leftfooter">
+                    <div id="Advertising">Advertising</div>
+                    <div id="Business"></div>Business</div>
+                    <div>How Search Works</div>
+                </div>
+                <div id="rightfooter">
+                    <div>Privacy</div>
+                    <div>Terms</div>
+                    <div>Settings</div>
+                </div>
+            </footer>
+        </div>
+        
     </body>
-    <div id="footerdiv">
-        <footer id="footer">
 
-        </footer>
-    </div>
 
 </main>
 </html>
