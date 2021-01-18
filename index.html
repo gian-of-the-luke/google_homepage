@@ -53,37 +53,40 @@
         display: block;
         padding-top: 30px;
     }
-    #bottombar {
+    #bigfooter {
         background-color: #f2f2f2;
-        border: solid;
-        border-color: gray;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
-        border-top: 20px;
+        border-top:0.1px gray solid;
         height: 36px;
-        margin-top: 216px;
-        margin-bottom: 0px;
-        
-
-    }
-    #footer {
-        display: flex;
-        flex-direction: row;
+        margin-top: 200px;
         padding-top: 10px;
         font-family: arial;
-        color: gray;
     }
-    #leftfooter {
-
+    #footerleft {
+        display: flex;
+        flex-direction: row;
+        background-color: #f2f2f2;
+        width: 50%;
+        float: left;
     }
-    #rightfooter {
+    #footerright {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #f2f2f2;
+        width: 50%;
+        float: right;
     }
-    #Advertising {
+    .words {
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+        margin-left: 20px;
     }
-    #Business {
-        
+    .w {
+        position: relative;
+        margin-right: 20px;
+        margin-left: 20px;
     }
+    
 
 </style>
 
@@ -111,19 +114,21 @@
                 I'm Feeling Lucky
             </button>
         </div>
-        <div id="bottombar">
-            <footer id="footer">
-                <div id="leftfooter">
-                    <div id="Advertising">Advertising</div>
-                    <div id="Business"></div>Business</div>
-                    <div>How Search Works</div>
+        <div id="bigfooter">
+            <div id="footerleft">
+                <div class="words">
+                    <div class="w">Advertising</div>
+                    <div class="w">Business</div>
+                    <div class="w">How Search Works</div>
                 </div>
-                <div id="rightfooter">
-                    <div>Privacy</div>
-                    <div>Terms</div>
-                    <div>Settings</div>
+            </div>
+            <div id="footerright">
+                <div class="words">
+                    <div class="w">Privacy</div>
+                    <div class="w">Terms</div>
+                    <div class="w">Settings</div>
                 </div>
-            </footer>
+            </div>
         </div>
         
     </body>
