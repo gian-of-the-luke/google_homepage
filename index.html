@@ -54,12 +54,15 @@
         padding-top: 30px;
     }
     #bigfooter {
+        position: fixed;
+        width: 100%;
         background-color: #f2f2f2;
-        border-top:0.1px gray solid;
+        border-top:0.008px gray solid;
         height: 36px;
-        margin-top: 200px;
-        padding-top: 10px;
+        margin-top: 308px;
+        padding-top: 15px;
         font-family: arial;
+        color: #5F6369;
     }
     #footerleft {
         display: flex;
@@ -85,6 +88,44 @@
         position: relative;
         margin-right: 20px;
         margin-left: 20px;
+    }
+    #bignav {
+        position: fixed;
+        top: 0px;
+        height: 36px;
+        padding-top: 30px;
+        width: 100%;
+        font-family: arial;
+        color:#5F6369;
+    }
+    #navleft {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        float: left;
+    }
+    #navright {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        float: right;
+    }
+    #bluebutton {
+        position: fixed;
+        top: 5px;
+        right: 15px;
+        font-weight: bolder;
+        font-size: large;
+        height: 40px;
+        width: 75px;
+        background-color: skyblue;
+        color: white;
+        margin-top: 10px;
+        margin-right: 5px;
+        text-align: center;
+        padding-top: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     
 
@@ -130,7 +171,22 @@
                 </div>
             </div>
         </div>
-        
+        <div id="bignav">
+            <div id="navleft">
+                <div class="words">
+                    <div class="w">About</div>
+                    <div class="w">Store</div>
+                </div>
+            </div>
+            <div id="navright">
+                <div class="words">
+                    <div class="w">Gmail</div>
+                    <div class="w">Images</div>
+                    <div class="w">Sign in</div>
+                    <div id="bluebutton">Sign in</div>
+                </div>
+            </div>
+        </div>
     </body>
 
 
